@@ -15,9 +15,9 @@ python adder.py --input_bit=128 --level_bound_delta=0 --demo
 
 (Make sure the *utils/fast_flow.tcl* and *utils/full_flow.tcl* has been copied to *OpenROAD/test*)
 ```
-python adder.py --input_bit=32 --adder_type=0 --openroad_path=/path/to/openroad
-python adder.py --input_bit=32 --adder_type=1 --openroad_path=/path/to/openroad
-python adder.py --input_bit=32 --adder_type=2 --openroad_path=/path/to/openroad
+python adder_prac.py --input_bit=32 --adder_type=0 --openroad_path=/path/to/openroad
+python adder_prac.py --input_bit=32 --adder_type=1 --openroad_path=/path/to/openroad
+python adder_prac.py --input_bit=32 --adder_type=2 --openroad_path=/path/to/openroad
 python select_adder.py --input_bit=32 --openroad_path=/path/to/openroad
 ```
 
