@@ -5,7 +5,7 @@ This is a codebase for our NeurIPS'24 **Spotlight** paper [*Scalable and Effecti
 
 Reinforcement Learning method for designing arithmetic hardware modules, including adders and multipliers.
 
-An introdution video can be seen [*here*]().
+An introdution video can be seen [*here*](https://www.bilibili.com/video/BV1fxxSebEgw/?vd_source=dca394f8d1037df4a246c2e079e79f99).
 
 ## Usage
 - Adder design (theoretical metrics)
