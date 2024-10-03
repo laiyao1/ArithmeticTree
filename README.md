@@ -1,6 +1,11 @@
-# Arithmetic Module Design
+# Scalable and Effective Arithmetic Tree Generation for Adder and Multiplier Designs
+
+
+This is a codebase for our NeurIPS'24 **Spotlight** paper [*Scalable and Effective Arithmetic Tree Generation for Adder and Multiplier Designs*](https://arxiv.org/abs/2405.06758).
 
 Reinforcement Learning method for designing arithmetic hardware modules, including adders and multipliers.
+
+An introdution video can be seen [*here*]().
 
 ## Usage
 - Adder design (theoretical metrics)
@@ -199,4 +204,33 @@ Then copy the following files for synthesis:
 cp utils/fast_flow.tcl /path/to/OpenROAD/test
 cp utils/full_flow.tcl /path/to/OpenROAD/test
 ```
+
+## Test-bench
+We used Verilog testbenches for the generated adders and multipliers.
+
+Each module undergoes a rigorous testing protocol comprising 100 addition or multiplication operations to ensure the correctness and reliability of its functionality.
+
+The test-bench code are in the folder ```testbench```. We give examples of generated modules in it. You can directly test by following commands.
+
+```
+cd testbench
+iverilog -o adder_sim adder.v adder_tb.v
+vvp adder_sim
+iverilog -o multiplier_sim multiplier.v multiplier_tb.v
+vvp multiplier_sim
+```
+
+
+
+## Citation
+If you find our paper or code useful in your research, please cite it.
+```
+@article{lai2024scalable,
+  title={Scalable and Effective Arithmetic Tree Generation for Adder and Multiplier Designs},
+  author={Lai, Yao and Liu, Jinxin and Pan, David Z and Luo, Ping},
+  journal={arXiv preprint arXiv:2405.06758},
+  year={2024}
+}
+```
+
 
